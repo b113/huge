@@ -1,0 +1,173 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f1f1f1;
+	color: #c2c2c2;
+}
+
+.shuffle {
+	display: block;
+	width: 100px;
+	height: 50px;
+	border: 1px solid lightgrey;
+	line-height: 50px;
+	text-align: center;
+	background-color: darkred;
+	transform: rotate(-90deg);
+	position: absolute;
+	left: 0;
+	top: 149px;
+	transition-duration: 1s;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.shuffle:hover {
+	transform: rotate(0deg);
+	transition-duration: 1s;
+	background-color: red;
+	font-weight: bold;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.title {
+	width: 100%;
+}
+
+.search {
+	padding: 50px 0;
+	height: 100px;
+}
+
+input[type="search"] {
+	padding: 0;
+	margin: 0;
+	/*    height: 40px;*/
+	/*        line-height: 0;*/
+	width: 85%;
+	font-size: 80px;
+	font-weight: bold;
+	background-color: #f1f1f1;
+	border: 0;
+	color: #ec5a62;
+}
+
+
+/*
+input[type="submit"] {
+    width: 5%;
+    height: 80px;
+    line-height: 38px;
+    background-color: #f1f1f1;
+    border: 0;
+    background-image: url(img/favicon.png);
+    vertical-align: top;
+}
+
+*/
+
+button {
+	width: 14%;
+	/*	width: 90px;*/
+	/*	height: 96px;*/
+	/*    line-height: 38px;*/
+	background-color: #f1f1f1;
+	border: 0;
+	vertical-align: top;
+	text-align: right;
+}
+
+button img {
+	height: 85px;
+	display: inline-block;
+	text-align: right;
+}
+
+::-webkit-input-placeholder {
+	color: #c2c2c2;
+}
+
+.list {
+	display: flex;
+	justify-content: space-between;
+}
+
+div[class^="col"] {
+	width: 30%;
+}
+
+ul li a {
+	display: block;
+	height: 70px;
+	background-color: #ebebeb;
+	/*	margin-bottom: 5px;*/
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+}
+
+ul li a:hover {
+	background-color: #e4e4e6;
+}
+
+ul li {
+	margin-bottom: 5px;
+}
+
+ul li a img {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.col-1-3 img {
+	border-radius: 50%;
+}
+
+a {
+	text-decoration: none;
+	color: #c2c2c2;
+	font-weight: bold;
+}
+
+a span {
+	margin-top: 5px;
+}
+
+@-webkit-keyframes hvr-pulse-grow {
+	to {
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+}
+
+@keyframes hvr-pulse-grow {
+	to {
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+}
+
+.hvr-pulse-grow {
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	cursor: pointer;
+}
+
+.hvr-pulse-grow:hover,
+.hvr-pulse-grow:focus,
+.hvr-pulse-grow:active {
+	-webkit-animation-name: hvr-pulse-grow;
+	animation-name: hvr-pulse-grow;
+	-webkit-animation-duration: 0.3s;
+	animation-duration: 0.3s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate;
+}
